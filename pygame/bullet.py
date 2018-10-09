@@ -6,7 +6,7 @@ class Bullet(Sprite):
         super(Bullet,self).__init__()
         self.screen = screen
 
-        self.rect = pygame.Rect(0,0, theSettings.bullet_width,theSettings.bullet_height)
+        self.rect = pygame.Rect(0, 0, theSettings.bullet_width,theSettings.bullet_height)
         self.rect.centerx = rubix.rect.centerx
         self.rect.top = rubix.rect.top
 
