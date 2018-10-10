@@ -1,7 +1,9 @@
 import pygame
+from pygame.sprite import Sprite
 
-class ImageIcon():
-    def __init__(self,screen,theSettings):
+class ImageIcon(Sprite):
+    def __init__(self,theSettings,screen):
+        super(rubix , self).__init__()
         self.screen = screen
         self.theSettings = theSettings
         self.image = pygame.image.load('rubixs.bmp')
